@@ -2,24 +2,24 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   namespace: default
-  name: olympic-api
+  name: sample-api
   labels:
-    app: olympic-api
+    app: sample-api
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: olympic-api
+      app: sample-api
   template:
     metadata:
       labels:
-        app: olympic-api
+        app: sample-api
     spec:
       containers:
-      - name: olympic-api
-        image: swarajwohlig2107/olympic-api
+      - name: sample-api
+        image: swarajwohlig2107/sample
         ports:
         - containerPort: 8080
         envFrom:
         - configMapRef:
-            name: olympic-api-config
+            name: sample-api-config
