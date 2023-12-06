@@ -16,10 +16,10 @@ spec:
         app: sample-api
     spec:
       containers:
-      - name: sample-api
-        image: swarajwohlig2107/sample
-        ports:
-        - containerPort: 8080
-        envFrom:
-        - configMapRef:
-            name: sample-api-config
+        - name: sample-api
+          image: swarajwohlig2107/sample:$GITHUB_REF-$GITHUB_SHA
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef:
+                name: sample-api-config
