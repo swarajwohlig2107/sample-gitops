@@ -1,7 +1,7 @@
-apiVersion: v1beta1
+apiVersion: v1
 kind: ConfigMap
 metadata:
   name: sample-api-config
 data:
- MONGO_DB : 'mongodb+srv://swarajbaswad:swaraj@practice.vj5pkpj.mongodb.net/'
- PORT : 8080
+  MONGO_DB: 'mongodb+srv://swarajbaswad:swaraj@practice.vj5pkpj.mongodb.net/'
+  PORT: '8080'
