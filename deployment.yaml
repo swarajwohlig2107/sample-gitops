@@ -22,4 +22,4 @@ spec:
             - containerPort: 8080
           envFrom:
             - configMapRef:
-                name: sample-api-config
+                name: sample-config
