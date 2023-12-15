@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: sample-api
-          image: swarajwohlig2107/sample:main-f82c0f9fdd3dfe6c2990b776c6aacd4b430123c6
+          image: swarajwohlig2107/sample:171352791656.dkr.ecr.ap-south-1.amazonaws.com/my-ecr:latest
           ports:
             - containerPort: 8080
           envFrom:
