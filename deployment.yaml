@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: sample-api
-          image: swarajwohlig2107/171352791656.dkr.ecr.ap-south-1.amazonaws.com/my-ecr:latest
+          image: 171352791656.dkr.ecr.ap-south-1.amazonaws.com/my-ecr:https://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@github.com/swarajwohlig2107/sample-gitops.git
           ports:
             - containerPort: 8080
           envFrom:
