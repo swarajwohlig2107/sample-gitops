@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: sample-api
-          image: swarajwohlig2107/sample:main-bf86f846e487cc26f283208c7c73baaec8ce2f76
+          image: swarajwohlig2107/sample:main-777c29dece05fb86877d1502f3d11b8648d0d3a7
           ports:
             - containerPort: 8080
           envFrom:
