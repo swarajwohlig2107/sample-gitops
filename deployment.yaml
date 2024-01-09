@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: sample-api
-          image: swarajwohlig2107/sample:main-777c29dece05fb86877d1502f3d11b8648d0d3a7
+          image: osamapatel/spa-frontend
           ports:
             - containerPort: 8080
           envFrom:
