@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sample-api
+  name: netflix
   labels:
-    app: sample-api
+    app: netflix
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sample-api
+      app: netflix
   template:
     metadata:
       labels:
-        app: sample-api
+        app: netflix
     spec:
       containers:
         - name: sample-api
@@ -21,4 +21,4 @@ spec:
             - containerPort: 8080
           envFrom:
             - configMapRef:
-                name: sample-config
+                name: netflix-config
