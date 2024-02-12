@@ -3,5 +3,6 @@ kind: ConfigMap
 metadata:
   name: netflix-config
 data:
-  MONGO_DB: 'mongodb+srv://swarajbaswad:swaraj@practice.vj5pkpj.mongodb.net/'
-  PORT: '8080'
+    VITE_APP_API_ENDPOINT_URL: https://api.themoviedb.org/3/trending/all/{time_window}
+    VITE_APP_TMDB_V3_API_KEY: dd93e995943ea2d822b365e5191a780f
+
