@@ -15,7 +15,7 @@ spec:
         app: netflix
     spec:
       containers:
-        - name: sample-api
+        - name: netflix
           image: swarajwohlig2107/netflix:main-3a6dfd226f718560746d3116d73f411c36fef01b
           ports:
             - containerPort: 8080
