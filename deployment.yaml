@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: netflix
-          image: swarajwohlig2107/netflix:main-3a6dfd226f718560746d3116d73f411c36fef01b
+          image: swarajwohlig2107/netflix:main-329bdfcd088f582e7d47589d0278d6bf7f78dd37
           ports:
             - containerPort: 8080
           envFrom:
