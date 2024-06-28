@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: sample-api
-          image: gcr.io/jovial-dolphin-413706/sample:main-60adab56d7c110358fd5705cf81a49d86ec08cf6
+          image: gcr.io/jovial-dolphin-413706/sample:${GITHUB_BRANCH}
           ports:
             - containerPort: 8080
           envFrom:
