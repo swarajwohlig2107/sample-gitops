@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: sample-api
-          image: swarajwohlig2107/netflix:main-351302348620402892cd93b8698c36eb9a17d45f
+          image: gcr.io/jovial-dolphin-413706/sample:main-f85eb2fdc876ff4f22fbcbb66ccac2861ec154f6
           ports:
             - containerPort: 8080
           envFrom:
