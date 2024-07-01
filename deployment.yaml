@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: sample-api
-          image: 'asia-south1-docker.pkg.dev/confixa-rnd/cloud-deploy/my-test:200c99343c9859a38488a2437a2c6e8126732e9c'
+          image: 'asia-south1-docker.pkg.dev/confixa-rnd/cloud-deploy/my-test:8aead7814aa36d34a8138cea911041e12e918888'
           ports:
             - containerPort: 8080
           envFrom:
