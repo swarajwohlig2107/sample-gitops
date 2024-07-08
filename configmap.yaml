@@ -3,4 +3,60 @@ kind: ConfigMap
 metadata:
   name: fancraze-test-config
 data:
-
+  stage: "test"
+  api: "true"
+  cron: "false"
+  cronname: "false"
+  pubsub: "false"
+  pubsubtopics: []
+  pubsubsubscribers: []
+  secretConfig: |
+    {
+      "entity": {
+        "basketball": {
+          "access_key": "YOUR_ACCESS_KEY",
+          "secret_key": "YOUR_SECRET_KEY"
+        },
+        "cricket": {
+          "access_key": "YOUR_ACCESS_KEY",
+          "secret_key": "YOUR_SECRET_KEY"
+        }
+      },
+      "postgres": {
+        "user": "postgres",
+        "host": "localhost",
+        "database": "importone",
+        "password": "password",
+        "port": 5434
+      },
+      "mongodb": {
+        "dbClusterUrl": "YOUR_MONGODB_CLUSTER_URL",
+        "mongodbOption": {
+          "useNewUrlParser": true,
+          "useUnifiedTopology": true
+        }
+      },
+      "postgreSql": {
+        "user": "postgres",
+        "host": "localhost",
+        "database": "importone",
+        "password": "password",
+        "port": 5434
+      },
+      "redis": {
+        "host": "YOUR_REDIS_HOST",
+        "port": 6379,
+        "username": "YOUR_REDIS_USERNAME",
+        "password": "YOUR_REDIS_PASSWORD"
+      },
+      "REDIS_HOST": "localhost",
+      "REDIS_PORT": 6379,
+      "SQS_BASE_URL": "",
+      "SLACK_TOKEN": "YOUR_SLACK_TOKEN",
+      "NODE_ENV": "uat",
+      "pubsub": {
+        "client_email": "ahmed-pubsub-admin@confixa-rnd.iam.gserviceaccount.com",
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDEOC7zRQIu/1iE\nfuJTjEjT9+6JHvUz8VHLQXnSj7kJLw/cvzzCc9valO5f5C2wfL5S3uk2C0kC2GL3\nW5k0uDofmX/X4z6HMbuMtnMGOVZKAMk02QGChvrgX6HA2CVkGxmsSdwCOZJ/XHaI\nAfRUCXll9HrxaxtMLUsVcu+1y7dgjnxkAyIiMSmZkxHAyJYOlxASRc4Rkc/qx0YJ\nnqRppIR5gOrG3KpObVjhoRHqK+dBzN8dz4ax3eiR9HqgxTcCzLKTreRJEcPzKf+3\nQe9J7BgViEeQKD0jfwhLb5AgtJGxKH/AatBa7NM6nwy52nDdGdwzjzAWzpZrWi5N\noJch7mklAgMBAAECggEADsKzNXWhfmuS+xSYbfSFnfxuoz4C8A9dOc8JHP/WyYwS\nw2ZXacFRbpX5gJknnrkjkBRYssoSifZBK55mXgLlzG69oT3k/EKPezxWVseFaDe6\n6xDP/kOtJ6fKATnBRlCLk9xSgpBWJuKLwBt1h8TWrwa/IN4PxaE6nrhws9pJRygP\nEZkfNQaP5jy7u/KoiDApJ0V5tTd+46TOW/s5y7HpXaPmFTjd5X5ohkpiAxWFNB+j\n1OP2vxNy9up6HDGiTLBbF6X568rLyAHqa5MU42zj6WNZCeDiwPXC1VntjGwZ3PhH\nO2e8v5Tq4wHIdk2edS2TL0zLb0dYIU8TNkmwkcVNWQKBgQDoRl5cWdIPhv0Vmudv\nMca9N9lDTFIkx8FThHgHYhRhP4TFqW0Rx8dwhZ0d6f2Kk0GTYf0+gVWtSmjcEM7s\neiU+r02hBsVmg/ClTuVOGsI3oUlqWv9zXHthYsM/bfxZ8WKy8FnQjW97RHvxlPcl\nMmS+uIiYeRENHyWpFNVtNaxvpwKBgQDYQwVrNuJTQS72m7u9TZAtFHIZbg2AZMdS\nwHkVw43MOFyJLAevCyZfwVRsmlMchMBDgG11anj2glsQ+X2w6sMW1rc1+kpPX1mh\nKJ8Sdms8Pxxcx84XQq12xEjhWTc3YccJKxiSlW0Dos+9Jttc+BO1D9l7Qp647sci\nl/sZir7aUwKBgCtuLOqbqNlaZiwKAMgbyItMzAT3WkyiRRW2qTLINgNQ+yRyX4B5\nmGMDuLMFM3Ebw6EpK07qo/h4905enjI9TIWCBcPcHkDi3rYqIFoQSsxYDgAi76zE\nWBWHf/Z2PD8dEVVf94s1RukHjx1Gu0drOscmffP0fymy7znEOXvoE0v1AoGAZbAd\n/Cvyf/NGge74eCrggFH81LhK4PSCRQb76J/rLPvThyyM8GHtyVi+udJXAjHptdPN\npEhMWJ0y9OhbkbTRxwtvWpI2HtxW6NCQ+71y7wE99OJ+pbFUn2PsYQnyTLhNPqJl\nC4f3mp4T0H1U6II9wgWR3cOVnp+oQzvzdi8nTsECgYEAsKywAQ/TEv2Qhk0XDZhK\ncb3CzYZaQxXURjiXy4rnleOG2VcW6yhAwbSmZqmBxn2DhePLkSuygWuM78vcXacy\n/qn7OiSYH20vkRZk6/dckY6LpjhuYR0alYfILhB4YnGm5nXh+j49hq4hdjk0TWn3\nPVVQq3UiKJOIJo/S1dwQVd0=\n-----END PRIVATE KEY-----\n",
+        "project_id": "confixa-rnd"
+      }
+    }

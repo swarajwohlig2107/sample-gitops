@@ -16,9 +16,9 @@ spec:
     spec:
       containers:
         - name: fancraze-test
-          image: 'asia-south1-docker.pkg.dev/confixa-rnd/cloud-deploy/my-test:dfe3515e5372884f6999fe1c0ba7713f63665204'
+          image: 'asia-south1-docker.pkg.dev/prj-fc-ops/prj-fc-gar-staging/fancraze-sports-service:latest'
           ports:
-            - containerPort: 8080
+            - containerPort: 3000
           envFrom:
             - configMapRef:
                 name: fancraze-test-config
