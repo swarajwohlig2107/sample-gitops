@@ -44,7 +44,7 @@ data:
         "port": 5434
       },
       "redis": {
-        "host": "YOUR_REDIS_HOST",
+        "host": "http://redis.redis.svc.cluster.local",
         "port": 6379,
         "username": "YOUR_REDIS_USERNAME",
         "password": "YOUR_REDIS_PASSWORD"
