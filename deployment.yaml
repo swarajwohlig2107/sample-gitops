@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sample-api
+  name: fancraze-test
   labels:
-    app: sample-api
+    app: fancraze-test
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: sample-api
+      app: fancraze-test
   template:
     metadata:
       labels:
-        app: sample-api
+        app: fancraze-test
     spec:
       containers:
-        - name: sample-api
+        - name: fancraze-test
           image: 'asia-south1-docker.pkg.dev/confixa-rnd/cloud-deploy/my-test:dfe3515e5372884f6999fe1c0ba7713f63665204'
           ports:
             - containerPort: 8080
           envFrom:
             - configMapRef:
-                name: sample-config
+                name: fancraze-test-config

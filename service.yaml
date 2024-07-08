@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: sample-api
+  name: fancraze-test
 spec:
   selector:
-    app: sample-api
+    app: fancraze-test
   ports:
     - protocol: TCP
       port: 80
