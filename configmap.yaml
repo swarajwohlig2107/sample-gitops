@@ -24,9 +24,9 @@ data:
       },
       "postgres": {
         "user": "postgres",
-        "host": "localhost",
-        "database": "importone",
-        "password": "password",
+        "host": "34.93.106.90",
+        "database": "postgres",
+        "password": "postgres@1234",
         "port": 5434
       },
       "mongodb": {
