@@ -49,7 +49,7 @@ data:
         "username": "YOUR_REDIS_USERNAME",
         "password": "YOUR_REDIS_PASSWORD"
       },
-      "REDIS_HOST": "localhost",
+      "REDIS_HOST": "redis.redis.svc.cluster.local",
       "REDIS_PORT": 6379,
       "SQS_BASE_URL": "",
       "SLACK_TOKEN": "YOUR_SLACK_TOKEN",
