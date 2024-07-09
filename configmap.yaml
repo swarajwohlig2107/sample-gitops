@@ -26,8 +26,7 @@ data:
         "user": "postgres",
         "host": "34.93.106.90",
         "database": "postgres",
-        "password": "postgres@1234",
-        "port": 5434
+        "password": "postgres@1234"
       },
       "mongodb": {
         "dbClusterUrl": "YOUR_MONGODB_CLUSTER_URL",
