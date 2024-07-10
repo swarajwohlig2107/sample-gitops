@@ -23,10 +23,10 @@ data:
         }
       },
       "postgres": {
-        "user": "postgres",
-        "host": "34.93.106.90",
-        "database": "postgres",
-        "password": "postgres@1234"
+        "user": "user",
+        "host": "172.17.6.3",
+        "database": "fc_sports",
+        "password": "root"
       },
       "mongodb": {
         "dbClusterUrl": "YOUR_MONGODB_CLUSTER_URL",
